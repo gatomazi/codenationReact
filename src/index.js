@@ -1,4 +1,7 @@
 const promotions = ["SINGLE LOOK", "DOUBLE LOOK", "TRIPLE LOOK", "FULL LOOK"];
+const categories = ["T-SHIRTS", "PANTS", "SHOES", "BAGS"];
+// const { products } = require("./data/products");
+
 function getShoppingCart(ids, productsList) {
   const isProductInCart = (product) => ids.includes(product.id);
   const productsInCart = productsList.filter(isProductInCart);
@@ -45,9 +48,9 @@ function getShoppingCart(ids, productsList) {
   };
 }
 
-// getShoppingCart([110, 130, 140, 230, 310, 330], products);
-// getShoppingCart([130, 140, 230, 260], products);
-// getShoppingCart([110, 120, 130, 140], products);
-// getShoppingCart([110, 130, 140, 230, 310, 330], products);
+// console.log(getShoppingCart([110, 130, 140, 230, 310, 330], products));
+// console.log(getShoppingCart([130, 140, 230, 260], products));
+// console.log(getShoppingCart([110, 120, 130, 140], products));
+// console.log(getShoppingCart([110, 130, 140, 230, 310, 330], products));
 
 module.exports = { getShoppingCart };
